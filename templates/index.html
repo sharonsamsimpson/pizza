@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">  
+    <title>Prediction</title>  
+</head>
+
+<body>
+    
+    <div class="login">
+        <Marquee height="30%" border="5%" width="100%" direction="right"><h1>Eat & Enjoy !!!</h1></Marquee>
+        <h1>KNOW IT !!!</h1>
+        <h2>Go...</h2>
+        <br>
+        <form action="{{ url_for('rpizza')}}" method="POST">     
+            <button id="pizza" type="submit" class="btn btn-primary btn-block btn-large">Pizza Liking</button>
+        </form>        
+    </div>
+
+</body>
+</html>
